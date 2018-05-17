@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Poke Helper - Royal Tunnel",
+    "version": "0.2",
+
+    "background": 
+    {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["http://pokeheroes.com/royal_tunnel?*"],
+            "js": ["jquery-3.3.1.min.js", "content.js"]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "pokeball.png"
+    }
+}
