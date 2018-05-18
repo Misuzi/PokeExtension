@@ -768,7 +768,7 @@ var pkmn_data = [
 
 function getRoyalData()
 {
- 
+
 var pkmn1_base = document.getElementsByClassName("royal_pkmn1");
 var pkmn1_link = pkmn1_base[0].currentSrc;
 var pkmn1_arr1 = pkmn1_link.split('/');
@@ -801,7 +801,7 @@ else
     }
     else
     {
-        console.log("    Types: " + pkmn_data[pkmn1_numb - 1][1]);    
+        console.log("    Types: " + pkmn_data[pkmn1_numb - 1][1]);
     }
     console.log("    Classification: " + pkmn_data[pkmn1_numb - 1][3]);
     console.log("    Egg Group: " + pkmn_data[pkmn1_numb - 1][4]);
@@ -837,7 +837,7 @@ else
     }
     else
     {
-        console.log("    Types: " + pkmn_data[pkmn2_numb - 1][1]);    
+        console.log("    Types: " + pkmn_data[pkmn2_numb - 1][1]);
     }
     console.log("    Classification: " + pkmn_data[pkmn2_numb - 1][3]);
     console.log("    Egg Group: " + pkmn_data[pkmn2_numb - 1][4]);
@@ -873,7 +873,7 @@ else
     }
     else
     {
-        console.log("    Types: " + pkmn_data[pkmn3_numb - 1][1]);    
+        console.log("    Types: " + pkmn_data[pkmn3_numb - 1][1]);
     }
     console.log("    Classification: " + pkmn_data[pkmn3_numb - 1][3]);
     console.log("    Egg Group: " + pkmn_data[pkmn3_numb - 1][4]);
@@ -915,28 +915,3 @@ else
 
 
 getRoyalData();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

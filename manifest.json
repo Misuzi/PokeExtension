@@ -1,21 +1,32 @@
 {
     "manifest_version": 2,
-    "name": "Poke Helper - Royal Tunnel",
-    "version": "0.2",
+    "name": "PokeExtension",
+    "version": "0.3",
 
-    "background": 
+    "description": "PokeHeroes Bot",
+
+    "page_action": {
+        "default_icon": "pokeball.png",
+        "default_title": "PokeExtension"
+    },
+
+    "author": "Misuzi",
+
+    "background":
     {
         "scripts": ["background.js"]
     },
 
     "content_scripts": [
         {
-            "matches": ["http://pokeheroes.com/royal_tunnel?*"],
-            "js": ["jquery-3.3.1.min.js", "content.js"]
+            "matches": ["https://pokeheroes.com/royal_tunnel*", "http://pokeheroes.com/royal_tunnel*"],
+            "js": ["jquery-3.3.1.min.js", "content_rt.js"]
+        },
+        {
+            "matches": ["https://pokeheroes.com/gc_hangman*", "http://pokeheroes.com/gc_hangman*"],
+            "js": ["jquery-3.3.1.min.js", "content_hm.js"]
         }
-    ],
+    ]
 
-    "browser_action": {
-        "default_icon": "pokeball.png"
-    }
+
 }
