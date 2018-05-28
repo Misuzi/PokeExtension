@@ -1,10 +1,23 @@
-// content_rt.js
-// Royal Tunnel Script
-//alert("Hello from your Chrome extension!");
+[
+  {
+    "name":"Bulbasaur", "primaryType":"Grass", "secondaryType":"Poison",
+    "classification":"Seed", "eggGroup":"Monster/Grass",
+    "ehp":"5355", "evolutionLevel":"16",
+    "numEntries":10,
+    "entries":
+    [
+      "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+      "It can go for days without eating a single morsel. In the bulb on its back, it stores energy.",
+      "The bulb-like pouch on its back grows larger as it ages. The pouch is filled with numerous seeds.",
+      "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.",
+      "It carries a seed on its back right from birth. As it grows older, the seed also grows larger.",
+    ]
+  },
 
 
-var pkmn_data = [
-    //["Bulbasaur","Grass","Poison","Seed","Monster/Grass",5355,16],
+]
+
+[
     ["Bulbasaur", "Grass", "Poison", "Seed", "Monster/Grass", "5355", "16"],
     ["Ivysaur", "Grass", "Poison", "Seed", "Monster/Grass", null, "32"],
     ["Venusaur", "Grass", "Poison", "Seed", "Monster/Grass", null, null],
@@ -755,164 +768,3 @@ var pkmn_data = [
     ["", "(null)", null, "(null)", "(null)", null, null],
     ["(null)", "(null)", null, "(null)", "(null)", null, null]
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-function getRoyalData()
-{
-
-var pkmn1_base = document.getElementsByClassName("royal_pkmn1");
-var pkmn1_link = pkmn1_base[0].currentSrc;
-var pkmn1_arr1 = pkmn1_link.split('/');
-var pkmn1_arr2 = pkmn1_arr1[6].split('.');
-var pkmn1_numb = parseInt(pkmn1_arr2[0]);
-
-var pkmn2_base = document.getElementsByClassName("royal_pkmn2");
-var pkmn2_link = pkmn2_base[0].currentSrc;
-var pkmn2_arr1 = pkmn2_link.split('/');
-var pkmn2_arr2 = pkmn2_arr1[6].split('.');
-var pkmn2_numb = parseInt(pkmn2_arr2[0]);
-
-var pkmn3_base = document.getElementsByClassName("royal_pkmn3");
-var pkmn3_link = pkmn3_base[0].currentSrc;
-var pkmn3_arr1 = pkmn3_link.split('/');
-var pkmn3_arr2 = pkmn3_arr1[6].split('.');
-var pkmn3_numb = parseInt(pkmn3_arr2[0]);
-
-
-if (pkmn1_numb > 726)
-{
-    console.log("Data not found");
-}
-else
-{
-    console.log("Pokemon 1: " + pkmn_data[pkmn1_numb - 1][0]);
-    if (pkmn_data[pkmn1_numb - 1][2] != null)
-    {
-        console.log("    Types: " + pkmn_data[pkmn1_numb - 1][1] + " " + pkmn_data[pkmn1_numb - 1][2]);
-    }
-    else
-    {
-        console.log("    Types: " + pkmn_data[pkmn1_numb - 1][1]);
-    }
-    console.log("    Classification: " + pkmn_data[pkmn1_numb - 1][3]);
-    console.log("    Egg Group: " + pkmn_data[pkmn1_numb - 1][4]);
-    if (pkmn_data[pkmn1_numb - 1][5] == null)
-    {
-        console.log("    EHP: N/A");
-    }
-    else
-    {
-        console.log("    EHP: " + pkmn_data[pkmn1_numb - 1][5]);
-    }
-    if (pkmn_data[pkmn1_numb - 1][6] == null)
-    {
-        console.log("    Evolution Level: N/A");
-    }
-    else
-    {
-        console.log("    Evolution Level: " + pkmn_data[pkmn1_numb - 1][6]);
-    }
-    console.log("");
-}
-
-if (pkmn2_numb > 726)
-{
-    console.log("Data not found");
-}
-else
-{
-    console.log("Pokemon 2: " + pkmn_data[pkmn2_numb - 1][0]);
-    if (pkmn_data[pkmn2_numb - 1][2] != null)
-    {
-        console.log("    Types: " + pkmn_data[pkmn2_numb - 1][1] + " " + pkmn_data[pkmn2_numb - 1][2]);
-    }
-    else
-    {
-        console.log("    Types: " + pkmn_data[pkmn2_numb - 1][1]);
-    }
-    console.log("    Classification: " + pkmn_data[pkmn2_numb - 1][3]);
-    console.log("    Egg Group: " + pkmn_data[pkmn2_numb - 1][4]);
-    if (pkmn_data[pkmn2_numb - 1][5] == null)
-    {
-        console.log("    EHP: N/A");
-    }
-    else
-    {
-        console.log("    EHP: " + pkmn_data[pkmn2_numb - 1][5]);
-    }
-    if (pkmn_data[pkmn2_numb - 1][6] == null)
-    {
-        console.log("    Evolution Level: N/A");
-    }
-    else
-    {
-        console.log("    Evolution Level: " + pkmn_data[pkmn2_numb - 1][6]);
-    }
-    console.log("");
-}
-
-if (pkmn3_numb > 726)
-{
-    console.log("Data not found");
-}
-else
-{
-    console.log("Pokemon 3: " + pkmn_data[pkmn3_numb - 1][0]);
-    if (pkmn_data[pkmn3_numb - 1][2] != null)
-    {
-        console.log("    Types: " + pkmn_data[pkmn3_numb - 1][1] + " " + pkmn_data[pkmn3_numb - 1][2]);
-    }
-    else
-    {
-        console.log("    Types: " + pkmn_data[pkmn3_numb - 1][1]);
-    }
-    console.log("    Classification: " + pkmn_data[pkmn3_numb - 1][3]);
-    console.log("    Egg Group: " + pkmn_data[pkmn3_numb - 1][4]);
-    if (pkmn_data[pkmn3_numb - 1][5] == null)
-    {
-        console.log("    EHP: N/A");
-    }
-    else
-    {
-        console.log("    EHP: " + pkmn_data[pkmn3_numb - 1][5]);
-    }
-    if (pkmn_data[pkmn3_numb - 1][6] == null)
-    {
-        console.log("    Evolution Level: N/A");
-    }
-    else
-    {
-        console.log("    Evolution Level: " + pkmn_data[pkmn3_numb - 1][6]);
-    }
-    console.log("");
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-getRoyalData();
