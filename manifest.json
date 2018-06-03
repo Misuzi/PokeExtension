@@ -25,6 +25,10 @@
         {
             "matches": ["https://pokeheroes.com/gc_hangman*", "http://pokeheroes.com/gc_hangman*"],
             "js": ["jquery-3.3.1.min.js", "content_hm.js"]
+        },
+        {
+            "matches": ["https://pokeheroes.com/pokemon_lite?cl_type=*", "http://pokeheroes.com/pokemon_lite?cl_type=*"],
+            "js": ["jquery-3.3.1.min.js", "content_cl.js"]
         }
     ]
 
