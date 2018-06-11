@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "PokeExtension",
-    "version": "0.3",
+    "version": "0.4",
 
     "description": "PokeHeroes Bot",
 
@@ -28,7 +28,11 @@
         },
         {
             "matches": ["https://pokeheroes.com/pokemon_lite?cl_type=*", "http://pokeheroes.com/pokemon_lite?cl_type=*"],
-            "js": ["jquery-3.3.1.min.js", "content_cl.js"]
+            "js": ["jquery-3.3.1.min.js", "content_cl.js", "content_cheat.js"]
+        },
+        {
+            "matches": ["https://pokeheroes.com/rumble_overview*", "http://pokeheroes.com/rumble_overview*"],
+            "js": ["jquery-3.3.1.min.js", "content_rm.js", "content_cheat.js"]
         }
     ]
 

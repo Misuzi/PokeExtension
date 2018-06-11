@@ -1,6 +1,8 @@
 // content_cl.js
 // Click List Script
 
+// FUNCTIONS--------------------------------------------------------------------
+
 function interact()
 {
   var name = document.getElementsByClassName("headline1");
@@ -22,6 +24,7 @@ function interact()
   var delay = 250 + (Math.floor((Math.random() * 250) + 1));
   setTimeout(function()
     {
+      counter_cheat();
       interact();
       loop();
     }, delay);
