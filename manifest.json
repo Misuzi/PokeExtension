@@ -33,6 +33,10 @@
         {
             "matches": ["https://pokeheroes.com/rumble_overview*", "http://pokeheroes.com/rumble_overview*"],
             "js": ["jquery-3.3.1.min.js", "content_rm.js", "content_cheat.js"]
+        },
+        {
+            "matches": ["https://pokeheroes.com/golden_slot?mode=*", "http://pokeheroes.com/golden_slot?mode=*"],
+            "js": ["jquery-3.3.1.min.js", "content_gs.js", "content_cheat.js"]
         }
     ]
 
